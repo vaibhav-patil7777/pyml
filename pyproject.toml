@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyml"
+version = "0.1.0"
+description = "PyML - Complete Data Science, Machine Learning & NLP Framework"
+readme = "README.md"
+requires-python = ">=3.8"
+
+authors = [
+    { name="Vaibhav Arun Patil" }
+]
+
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "matplotlib",
+    "seaborn",
+    "plotly",
+    "nltk",
+    "scipy",
+    "imbalanced-learn"
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/vaibhav-patil7777/pyml"
+"Repository" = "https://github.com/vaibhav-patil7777/pyml"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
